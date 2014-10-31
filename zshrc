@@ -1,5 +1,5 @@
 #configs
-HISTFILE=~/.shell_history
+HISTFILE=~/shell_history
 HISTSIZE=10000
 SAVEHIST=100000
 setopt append_history sharehistory histignorealldups
@@ -19,7 +19,7 @@ alias 187='ssh -p 27000 goibibo@10.70.16.187'
 alias 189='ssh -p 27000 goibibo@10.70.16.189'
 alias 113='ssh abhishek@10.80.3.113'
 alias server='python ~/travelibibo/manage.py runserver'
-alias ti='cd /home/abhishek/workspace/travelibibo'
+alias ti='cd /home/abhishek/source/travelibibo'
 alias ls='ls -lh'
 alias sl='ls -lh'
 #prompt tweaks
@@ -52,10 +52,7 @@ setopt CORRECT
 
 export JAVA_HOME=/usr/lib/jvm/java-7-oracle
 #export PATH=/usr/bin
-source /home/abhishek/goibibo/bin/activate
-
-
-
-export HADOOP_HOME=/home/abhishek/workspace/hadoop
-export PATH=$PATH:$HADOOP_HOME/bin
+#source /home/abhishek/goibibo/bin/activate
+#export HADOOP_HOME=/home/abhishek/workspace/hadoop
+#export PATH=$PATH:$HADOOP_HOME/bin
 
