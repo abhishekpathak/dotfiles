@@ -55,4 +55,6 @@ export JAVA_HOME=/usr/lib/jvm/java-7-oracle
 #source /home/abhishek/goibibo/bin/activate
 #export HADOOP_HOME=/home/abhishek/workspace/hadoop
 #export PATH=$PATH:$HADOOP_HOME/bin
-
+export GOPATH=$HOME/source/go
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOPATH/bin
