@@ -1,0 +1,6 @@
+# os-created
+.DS_Store
+
+# editor-created
+*~
+*.swp

@@ -1,0 +1,37 @@
+# set up locales
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+# set up global directories
+export XDG_CONFIG_HOME=~/.config    # https://wiki.archlinux.org/index.php/XDG_Base_Directory_support
+export CODE=~/code
+export DOTFILES=$CODE/personal/dotfiles
+
+# Load .bashrc if it exists
+test -f ~/.bashrc && source ~/.bashrc
+
+# Load all .bash files located in dotfiles
+typeset config_files
+config_files=($DOTFILES/**/*.bash)
+for file in "${config_files[@]}"
+do
+  source $file
+done
+unset config_files
+
+# store your ssh passphrase in the keychain.
+# /usr/bin/ssh-add -K ~/.ssh/id_rsa
+
+# set up color in terminal
+GRCFILE=/usr/local/etc/grc.bashrc
+[[ -s $GRCFILE ]] && source $GRCFILE
+
+# powerline shell prompt # https://github.com/banga/powerline-shell
+function _update_ps1() {
+    PS1="$(powerline-shell $?)"
+}
+if [ "$TERM" != "linux" ]; then
+    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+fi
+
+

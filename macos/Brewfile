@@ -1,0 +1,63 @@
+brew 'mas'
+brew 'bash', link: true, args: ['overwrite']
+brew 'vim', args: ['override-system-vi']
+brew 'git', link: true, args: ['overwrite']
+brew 'bash-completion'
+brew 'node'
+brew 'go'
+brew 'python3'
+brew 'tree'
+brew 'grc'
+brew 'fasd'
+
+brew 'coreutils'
+tap 'homebrew/dupes'
+brew 'binutils'
+brew 'diffutils'
+brew 'findutils'
+brew 'gawk'
+brew 'gnu-sed', args: ['with-default-names']
+brew 'gnu-tar', args: ['with-default-names']
+brew 'gnu-which', args: ['with-default-names']
+brew 'gnutls'
+brew 'grep', args: ['with-default-names']
+brew 'gzip'
+brew 'screen'
+brew 'watch'
+brew 'gnupg'
+brew 'gnupg2'
+brew 'make'
+brew 'less'
+brew 'openssh'
+brew 'rsync'
+brew 'unzip'
+
+cask_args appdir: "/Applications"
+tap 'caskroom/cask'
+cask 'iterm2'
+cask 'java8'
+cask 'google-chrome'
+cask 'spectacle'
+cask 'vlc'
+cask 'dropbox'
+cask 'sublime-text'
+cask 'skype'
+cask 'slack'
+cask 'google-backup-and-sync'
+cask 'pycharm'
+cask 'webstorm'
+cask 'intellij-idea'
+cask 'evernote'
+cask 'automute'
+cask 'alfred'
+cask 'omnifocus'
+cask 'appcleaner'
+
+tap 'caskroom/fonts'
+cask 'font-meslo-nerd-font-mono'
+
+mas 'tomato one', id: 907364780
+mas 'reeder 3', id: 880001334
+
+
+
