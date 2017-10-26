@@ -1,20 +1,7 @@
 #!/bin/bash
 set -e
 
-echo "Use list view in all Finder windows by default."
-defaults write com.apple.finder FXPreferredViewStyle -string '"Nlsv"'
-
-echo "Show the ~/Library folder."
-chflags nohidden ~/Library
-
-echo "Show the /Volumes folder."
-sudo chflags nohidden /Volumes
-
-echo "Show hidden files (whose name starts with dot) in finder."
-defaults write com.apple.finder AppleShowAllFiles -int 1
-
-echo "Show full file path in finder windows."
-defaults write _FXShowPosixPathInTitle com.apple.finder -int 1
+echo "Show full file path in finder status bar."
 defaults write com.apple.finder ShowPathbar -bool true
 
 echo "Don't write DS_Store files to network shares or USB drives."
