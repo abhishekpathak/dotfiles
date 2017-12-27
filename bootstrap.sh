@@ -1,7 +1,8 @@
 #!/bin/bash
 set -e
 
-dotfiles_dir=$(dirname $(realpath $0)) # path where the current script is located
+#dotfiles_dir=$(dirname $(realpath $0)) # path where the current script is located
+dotfiles_dir=$(pwd) # path where the current script is located
 
 echo "Which is the present system (macos/linux)?"
 read -e system
