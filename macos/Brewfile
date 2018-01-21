@@ -56,6 +56,8 @@ cask 'omnifocus'
 cask 'appcleaner'
 cask 'visual-studio-code'
 cask 'dash'
+cask 'calibre'
+cask 'tunnelbear'
 
 tap 'caskroom/fonts'
 cask 'font-meslo-nerd-font-mono'
