@@ -23,4 +23,5 @@
 	changed = green
 	untracked = cyan
 [credential]
+    useHttpPath = true
 	helper = osxkeychain
