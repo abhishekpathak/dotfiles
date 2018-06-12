@@ -34,6 +34,7 @@ if [ "$TERM" != "linux" ]; then
     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi
 
-# SKIL env values(temp)
-CLOUD_CREDS_DIR="/Users/abhishek/Documents/cloudCreds/"
+#Skymind-related configurations
+export SKIL_HOME="/Users/abhishek/opt/skil"
+export CLOUD_CREDS_DIR="/Users/abhishek/Documents/cloudCreds/"
 

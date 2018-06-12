@@ -2,6 +2,7 @@ brew 'mas'
 brew 'bash', link: true, args: ['overwrite']
 brew 'vim', args: ['override-system-vi']
 brew 'git', link: true, args: ['overwrite']
+brew 'git-lfs'
 brew 'bash-completion'
 brew 'node'
 brew 'go'
@@ -65,7 +66,6 @@ cask 'font-meslo-nerd-font-mono'
 mas 'tomato one', id: 907364780
 mas 'reeder 3', id: 880001334
 mas 'AutoMute', id: 1118136179
-mas 'Spark', id: 1176895641
 
 
 
