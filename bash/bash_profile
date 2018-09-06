@@ -11,7 +11,7 @@ export DOTFILES=$CODE/personal/dotfiles
 test -f ~/.bashrc && source ~/.bashrc
 
 # preferred aliases
-alias ll="ls -l"
+alias ll="ls -lh"
 
 # Load all .bash files located in dotfiles
 typeset config_files
@@ -45,9 +45,9 @@ export CLOUD_CREDS_DIR="/Users/abhishek/Documents/cloudCreds/"
 export SKIL_HOME="/Users/abhishek/opt/skil"
 export SKIL_LOG_DIR=$SKIL_HOME/logs
 export SKIL_PID_FILE=$SKIL_HOME/skil.pid
-export SKIL_LICENSE_PATH=/Users/abhishek/code/skymind/lagom-skil-api/skilaspects/src/test/resources/skil-trial-license.txt
-export SKIL_PUBLIC_KEY_PATH=/Users/abhishek/code/skymind/lagom-skil-api/skil-test-resources/src/main/resources/skil-trial-public.txt
+export SKIL_LICENSE_PATH=/Users/abhishek/code/skymind/skil-server/skilaspects/src/test/resources/skil-trial-license.txt
+export SKIL_PUBLIC_KEY_PATH=/Users/abhishek/code/skymind/skil-server/skil-test-resources/src/main/resources/skil-trial-public.txt
 export SKIL_CLASS_PATH=$SKIL_HOME/lib/*:$SKIL_HOME/native/*:$SKIL_HOME/lib/ext/*:$SKIL_HOME/jackson-2.5.1/*
-export FORCE_UPDATE_TO_DB=true
-export SKIL_DEBUG_MODE=true
+#export FORCE_UPDATE_TO_DB=true
+export SKIL_DEBUG_MODE=false
 alias skilup="mvn clean package -DskipTests && cp $PWD/target/*.jar $SKIL_HOME/lib && $SKIL_HOME/sbin/stop-skil-daemon && sleep 10 && $SKIL_HOME/sbin/start-skil-daemon"

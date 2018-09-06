@@ -1,5 +1,6 @@
 [core]
 	excludesfile = ~/.gitignore
+	autocrlf = true
 [user]
     name = Abhishek Pathak
     email = me@abhishekpathak.net
