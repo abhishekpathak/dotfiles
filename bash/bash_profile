@@ -41,7 +41,7 @@ fi
 HISTSIZE=10000
 HISTFILESIZE=20000
 shopt -s histappend
-# important: execute this command **after** the prompt has been designed
+# important: execute this command *after* the prompt has been designed
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
 # set up Java-related env
@@ -57,4 +57,5 @@ export SKIL_PUBLIC_KEY_PATH=/Users/abhishek/code/skymind/skil-server/skil-test-r
 export SKIL_CLASS_PATH=$SKIL_HOME/lib/*:$SKIL_HOME/native/*:$SKIL_HOME/lib/ext/*:$SKIL_HOME/jackson-2.5.1/*
 #export FORCE_UPDATE_TO_DB=true
 export SKIL_DEBUG_MODE=false
+# alias to  update a skil subpackage in SKIL_HOME
 alias skilup="mvn clean package -DskipTests && cp $PWD/target/*.jar $SKIL_HOME/lib && $SKIL_HOME/sbin/stop-skil-daemon && sleep 10 && $SKIL_HOME/sbin/start-skil-daemon"
