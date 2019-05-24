@@ -16,6 +16,7 @@ bash $dotfiles_dir/$system/install_apps.sh
 find $dotfiles_dir -name install.sh | while read installer ; do /bin/bash "${installer}" ; done
 
 echo "set up bash preferences."
+# bash sourcing order: bash_profile --> bashrc --> bashrc_dotfiles --> bashrc_dotfiles_extra"
 ln -sf $dotfiles_dir/bash/bash_profile $HOME/.bash_profile
 ln -sf $dotfiles_dir/bash/bashrc $HOME/.bashrc_dotfiles
 ln -sf $dotfiles_dir/$system/bashrc_extra $HOME/.bashrc_dotfiles_extra #add os-specific bash config to the system
@@ -29,12 +30,10 @@ echo "set up vim preferences."
 ln -sf $dotfiles_dir/vim/vimrc $HOME/.vimrc
 
 echo "set up powerline config."
-ln -sf colorscheme.json > $POWERLINE_LIB/config_files/colorschemes/shell/default.json
-ln -sf theme.json > $POWERLINE_LIB/config_files/themes/shell/default.json
+source $HOME/.bashrc_dotfiles_extra
+ln -sf $dotfiles_dir/powerline/colorscheme.json $POWERLINE_LIB/config_files/colorschemes/shell/default.json
+ln -sf $dotfiles_dir/powerline/theme.json $POWERLINE_LIB/config_files/themes/shell/default.json
 
-echo "reloading bash..."
-# bash sourcing order: bash_profile --> bashrc --> bashrc_dotfiles --> bashrc_dotfiles_extra"
-source $HOME/.bash_profile
 echo "done."
 
 

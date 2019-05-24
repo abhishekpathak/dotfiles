@@ -1,8 +1,6 @@
 #!/bin/bash
 set -e
 
-current_dir=$(pwd)
-
 echo "Installing brew..."
 bash homebrew.sh
 

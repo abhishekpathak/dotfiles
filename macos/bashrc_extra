@@ -1,9 +1,8 @@
 #!/bin/bash
-
-export PATH=$PATH:$HOME/Library/Python/2.7/bin
+export PATH=$PATH:/usr/local/Cellar/python@2/2.7.15_2/Frameworks/Python.framework/Versions/2.7/bin
 
 # powerline
-export POWERLINE_LIB=$HOME/Library/Python/2.7/lib/python/site-packages/powerline
+export POWERLINE_LIB=/usr/local/Cellar/python@2/2.7.15_2/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/powerline
 
 # brew
 # Ensure coreutils and brew-installed binaries take precedence
