@@ -3,11 +3,11 @@
 	autocrlf = input
 [user]
     name = Abhishek Pathak
-    email = me@abhishekpathak.net
+    email = 4abhishekpathak@gmail.com
 [alias]
-    co = checkout
+    parent = "!git show-branch | grep '*' | grep -v \"$(git rev-parse --abbrev-ref HEAD)\" | head -n1 | sed 's/.*\\[\\(.*\\)\\].*/\\1/' | sed 's/[\\^~].*//' #"
 [color]
-        ui = auto
+    ui = auto
 	branch = auto
 	diff = auto
 	status = auto
@@ -27,8 +27,3 @@
 [credential]
     useHttpPath = true
 	helper = osxkeychain
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true

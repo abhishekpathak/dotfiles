@@ -1,0 +1,6 @@
+#!/bin/bash
+
+export PATH=$PATH:$HOME/.local/bin
+
+# powerline
+export POWERLINE_LIB=$HOME/.local/lib/python2.7/site-packages/powerline

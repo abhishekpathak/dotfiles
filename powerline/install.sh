@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-echo "installing powerline-shell..."
+echo "installing powerline..."
 
-pip3 install powerline-shell
-
+pip install powerline-status
+pip install powerline-gitstatus

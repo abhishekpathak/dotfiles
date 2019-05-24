@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# set up locales
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+# set up global directories
+export XDG_CONFIG_HOME=$HOME/.config    # https://wiki.archlinux.org/index.php/XDG_Base_Directory_support
+export CODE=$HOME/code
+export DOTFILES=$CODE/personal/dotfiles
+
+# preferred aliases
+alias ll="ls -lh"
+
+# Load os-specific bash configs
+source $HOME/.bashrc_dotfiles_extra
+
+# Load all .bash files located inside directories
+typeset config_files
+config_files=($DOTFILES/**/*.bash)
+for file in "${config_files[@]}"
+do
+  source $file
+done
+unset config_files
+
+# set up color in terminal
+GRCFILE=/usr/local/etc/grc.bashrc
+[[ -s $GRCFILE ]] && source $GRCFILE
+
+# better bash history
+HISTSIZE=10000
+HISTFILESIZE=20000
+shopt -s histappend
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND" # important: execute this command *after* the prompt has been designed
+
+# set up Java-related env
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/"

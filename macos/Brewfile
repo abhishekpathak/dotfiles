@@ -36,7 +36,6 @@ brew 'rsync'
 brew 'unzip'
 cask 'java8'
 brew 'maven'
-brew 'tldr'
 
 cask_args appdir: "/Applications"
 tap 'caskroom/cask'
