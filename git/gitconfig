@@ -1,4 +1,5 @@
 [core]
+	editor = vim
 	excludesfile = ~/.gitignore
 	autocrlf = input
 [user]
