@@ -1,5 +1,5 @@
 #Local skil install related configurations
-export CLOUD_CREDS_DIR="/Users/abhishek/code/skymind/cloudCreds"
+export CLOUD_CREDS_DIR=$HOME/code/skymind/cloudCreds
 export SKIL_AWS_CRED_FILE=$CLOUD_CREDS_DIR/skil_aws_cred.json
 export SKIL_GCP_CRED_FILE=$CLOUD_CREDS_DIR/skil_gcp_cred.json
 #export SKIL_HOME="/Users/abhishek/opt/skil"
