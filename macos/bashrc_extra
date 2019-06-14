@@ -10,3 +10,5 @@ export POWERLINE_LIB=$BREW_PYTHON_HOME/lib/python2.7/site-packages/powerline
 PATH="/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:/usr/local/sbin:$PATH"
 MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 alias brewup='brew update; brew upgrade; brew cleanup; brew doctor'
+
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/"

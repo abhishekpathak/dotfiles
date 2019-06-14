@@ -1,6 +1,8 @@
 #!/bin/bash
 
-export PATH=$PATH:$HOME/.local/bin
+PATH=$PATH:$HOME/.local/bin
 
 # powerline
 export POWERLINE_LIB=$HOME/.local/lib/python2.7/site-packages/powerline
+
+export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"

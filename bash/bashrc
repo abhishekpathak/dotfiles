@@ -9,6 +9,9 @@ export XDG_CONFIG_HOME=$HOME/.config    # https://wiki.archlinux.org/index.php/X
 export CODE=$HOME/code
 export DOTFILES=$CODE/personal/dotfiles
 
+# turn off terminal beep
+bind 'set bell-style none'
+
 # preferred aliases
 alias ll="ls -lh"
 
@@ -34,5 +37,3 @@ HISTFILESIZE=20000
 shopt -s histappend
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND" # important: execute this command *after* the prompt has been designed
 
-# set up Java-related env
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/"
