@@ -1,15 +1,14 @@
 brew 'mas'
 brew 'bash', link: true, args: ['overwrite']
+brew 'zsh', link: true, args: ['overwrite']
 brew 'vim', args: ['override-system-vi']
 brew 'git', link: true, args: ['overwrite']
 brew 'git-lfs'
-brew 'bash-completion'
 brew 'node'
 brew 'go'
 brew 'python3'
 brew 'tree'
-brew 'grc'
-brew 'fasd'
+brew 'autojump'
 
 brew 'coreutils'
 tap 'homebrew/dupes'
@@ -34,7 +33,6 @@ brew 'gcc'
 brew 'less'
 brew 'rsync'
 brew 'unzip'
-cask 'java8'
 brew 'maven'
 
 cask_args appdir: "/Applications"
@@ -52,7 +50,6 @@ cask 'webstorm'
 cask 'intellij-idea'
 cask 'evernote'
 cask 'alfred'
-cask 'omnifocus'
 cask 'appcleaner'
 cask 'visual-studio-code'
 cask 'dash'

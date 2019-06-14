@@ -7,4 +7,9 @@ bash homebrew.sh
 echo "Installing apps via brew bundle..."
 brew bundle
 
+echo "
+############### please install the following manually ###############################
+ # java
+ "
+
 
