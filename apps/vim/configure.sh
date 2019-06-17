@@ -1,3 +1,3 @@
 echo "configuring vim ..."
 
-ln -sf $DOTFILES/vim/vimrc $HOME/.vimrc
+ln -sf $DOTFILES/apps/vim/vimrc $HOME/.vimrc

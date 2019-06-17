@@ -57,8 +57,8 @@ prompt_newline='%666v' # have pure as a single-line prompt
 PROMPT=" $PROMPT"
 
 # syntax highlighting plugin
-source $HOME/code/personal/zsh-plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $DOTFILES/apps/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # fish like autosuggestions
-source $HOME/code/personal/zsh-plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $DOTFILES/apps/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#5b5d63"

@@ -1,4 +1,4 @@
 echo "configuring git..."
 
-ln -sf $DOTFILES/git/gitconfig $HOME/.gitconfig
-ln -sf $DOTFILES/git/gitignore $HOME/.gitignore
+ln -sf $DOTFILES/apps/git/gitconfig $HOME/.gitconfig
+ln -sf $DOTFILES/apps/git/gitignore $HOME/.gitignore
