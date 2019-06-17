@@ -1,0 +1,64 @@
+#!/usr/bin/env zsh
+
+# set up locales
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+# set up global directories
+export XDG_CONFIG_HOME=$HOME/.config    # https://wiki.archlinux.org/index.php/XDG_Base_Directory_support
+export CODE=$HOME/code
+export DOTFILES=$CODE/personal/dotfiles
+
+# preferred aliases
+alias ll="ls -lh"
+
+# Load system-specific-env
+source $HOME/.env-system.sh
+
+# Load all env.sh files located inside directories
+typeset config_files
+config_files=($DOTFILES/apps/**/env.sh)
+for file in "${config_files[@]}"
+do
+  source $file
+done
+unset config_files
+
+# turn off terminal beep
+unsetopt BEEP
+
+# initialize zsh completions
+autoload -Uz compinit; compinit
+
+# initialize the prompt system
+autoload -Uz promptinit; promptinit
+
+
+# History configuration
+# ref: https://github.com/robbyrussell/oh-my-zsh/blob/master/lib/history.zsh
+[ -z "$HISTFILE" ] && HISTFILE="$HOME/.zsh_history"
+HISTSIZE=50000
+SAVEHIST=10000
+setopt extended_history       # record timestamp of command in HISTFILE
+setopt hist_expire_dups_first # delete duplicates first when HISTFILE size exceeds HISTSIZE
+setopt hist_ignore_dups       # ignore duplicated commands history list
+setopt hist_ignore_space      # ignore commands that start with space
+setopt hist_verify            # show command with history expansion to user before running it
+setopt inc_append_history     # add commands to HISTFILE in order of execution
+setopt share_history          # share command history data
+
+# zsh completion configuration.
+# ref: http://zsh.sourceforge.net/Doc/Release/Options.html
+setopt correct
+
+# prompt configuration
+prompt pure
+prompt_newline='%666v' # have pure as a single-line prompt
+PROMPT=" $PROMPT"
+
+# syntax highlighting plugin
+source $HOME/code/personal/zsh-plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# fish like autosuggestions
+source $HOME/code/personal/zsh-plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#5b5d63"

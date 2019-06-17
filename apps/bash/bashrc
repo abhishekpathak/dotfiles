@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# set up locales
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+# set up global directories
+export XDG_CONFIG_HOME=$HOME/.config    # https://wiki.archlinux.org/index.php/XDG_Base_Directory_support
+export CODE=$HOME/code
+export DOTFILES=$CODE/personal/dotfiles
+
+# better history
+HISTSIZE=10000
+HISTFILESIZE=20000
+shopt -s histappend
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND" # important: execute this command *after* the prompt has been designed
+
+# turn off terminal beep
+bind 'set bell-style none'
+
+# preferred aliases
+alias ll="ls -lh"
+
+# Load system-specific-env
+source $HOME/.env-system.sh
+
+# Load all env.sh files located inside directories
+typeset config_files
+config_files=($DOTFILES/apps/**/env.sh)
+for file in "${config_files[@]}"
+do
+  source $file
+done
+unset config_files

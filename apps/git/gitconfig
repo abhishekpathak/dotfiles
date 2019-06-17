@@ -27,3 +27,5 @@
 	added = yellow
 	changed = green
 	untracked = cyan
+[url "git@github.com:"]
+    insteadOf = "https://github.com/"

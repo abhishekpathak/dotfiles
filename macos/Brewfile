@@ -1,6 +1,12 @@
+# taps
+tap 'homebrew/cask-fonts'
+
+
+# CLI
+
 brew 'mas'
 brew 'bash', link: true, args: ['overwrite']
-brew 'zsh', link: true, args: ['overwrite']
+brew 'zsh'
 brew 'vim', args: ['override-system-vi']
 brew 'git', link: true, args: ['overwrite']
 brew 'git-lfs'
@@ -9,10 +15,7 @@ brew 'go'
 brew 'python3'
 brew 'tree'
 brew 'autojump'
-
 brew 'coreutils'
-tap 'homebrew/dupes'
-tap 'caskroom/versions'
 brew 'binutils'
 brew 'diffutils'
 brew 'findutils'
@@ -35,8 +38,11 @@ brew 'rsync'
 brew 'unzip'
 brew 'maven'
 
+
+
+# GUI
+
 cask_args appdir: "/Applications"
-tap 'caskroom/cask'
 cask 'iterm2'
 cask 'google-chrome'
 cask 'spectacle'
@@ -55,13 +61,15 @@ cask 'visual-studio-code'
 cask 'dash'
 cask 'calibre'
 cask 'tunnelbear'
-
-tap 'caskroom/fonts'
-cask 'font-meslo-nerd-font-mono'
-
 mas 'tomato one', id: 907364780
 mas 'reeder 3', id: 880001334
 mas 'AutoMute', id: 1118136179
+
+# extras
+
+# fonts
+cask 'font-meslo-nerd-font-mono'
+cask 'font-hack-nerd-font'
 
 
 

@@ -1,38 +1,21 @@
 #!/bin/bash
 set -e
 
-dotfiles_dir=$(pwd) # path where the current script is located
+DOTFILES=$HOME/code/personal/dotfiles
 
 echo "Which is the present OS (macos/ubuntu)?"
 read -e system
 
-#configure the system environment
-bash $dotfiles_dir/$system/configure.sh
+# configure the system 
+# 1. install applications
+# 2. configure os-level preferences
+source $DOTFILES/$system/configure.sh
 
-#install necessary apps
-bash $dotfiles_dir/$system/install_apps.sh
+# symlink bundled system-specifc env file to ~/.env-system.sh
+ln -sf $DOTFILES/$system/env.sh $HOME/.env-system.sh
 
-#find individual installers inside dotfiles and run them iteratively
-find $dotfiles_dir -name install.sh | while read installer ; do /bin/bash "${installer}" ; done
-
-echo "set up bash preferences."
-# bash sourcing order: bash_profile --> bashrc --> bashrc_dotfiles --> bashrc_dotfiles_extra"
-ln -sf $dotfiles_dir/bash/bash_profile $HOME/.bash_profile
-ln -sf $dotfiles_dir/bash/bashrc $HOME/.bashrc_dotfiles
-ln -sf $dotfiles_dir/$system/bashrc_extra $HOME/.bashrc_dotfiles_extra #add os-specific bash config to the system
-echo "source $HOME/.bashrc_dotfiles" >> $HOME/.bashrc
-
-echo "set up git preferences."
-ln -sf $dotfiles_dir/git/gitconfig $HOME/.gitconfig
-ln -sf $dotfiles_dir/git/gitignore $HOME/.gitignore
-
-echo "set up vim preferences."
-ln -sf $dotfiles_dir/vim/vimrc $HOME/.vimrc
-
-echo "set up powerline config."
-source $HOME/.bashrc_dotfiles_extra
-ln -sf $dotfiles_dir/powerline/colorscheme.json $POWERLINE_LIB/config_files/colorschemes/shell/default.json
-ln -sf $dotfiles_dir/powerline/theme.json $POWERLINE_LIB/config_files/themes/shell/default.json
+# configure app-level preferences
+find $DOTFILES/apps -name configure.sh | while read config ; do /bin/bash "${config}" ; done
 
 echo "done."
 

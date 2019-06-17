@@ -1,3 +1,5 @@
+echo "configuring skil env..."
+
 #Local skil install related configurations
 export CLOUD_CREDS_DIR=$HOME/code/skymind/cloudCreds
 export SKIL_AWS_CRED_FILE=$CLOUD_CREDS_DIR/skil_aws_cred.json
