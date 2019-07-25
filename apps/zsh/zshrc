@@ -52,9 +52,16 @@ setopt share_history          # share command history data
 setopt correct
 
 # prompt configuration
-prompt pure
-prompt_newline='%666v' # have pure as a single-line prompt
-PROMPT=" $PROMPT"
+# prompt pure
+# prompt_newline='%666v' # have pure as a single-line prompt
+# PROMPT=" $PROMPT"
+
+# powerlevel9k prompt config
+source  $DOTFILES/apps/zsh/plugins/powerlevel9k/powerlevel9k.zsh-theme
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
+#prompt_newline='%666v'
+#PROMPT=" $PROMPT"
 
 # syntax highlighting plugin
 source $DOTFILES/apps/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -62,3 +69,6 @@ source $DOTFILES/apps/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlightin
 # fish like autosuggestions
 source $DOTFILES/apps/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#5b5d63"
+
+# autojump
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh

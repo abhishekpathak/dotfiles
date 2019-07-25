@@ -7,3 +7,6 @@
 [submodule "apps/zsh/plugins/pure"]
 	path = apps/zsh/plugins/pure
 	url = git@github.com:sindresorhus/pure.git
+[submodule "apps/zsh/plugins/powerlevel9k"]
+	path = apps/zsh/plugins/powerlevel9k
+	url = git@github.com:Powerlevel9k/powerlevel9k.git
