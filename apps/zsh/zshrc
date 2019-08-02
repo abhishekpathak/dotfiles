@@ -52,23 +52,30 @@ setopt share_history          # share command history data
 setopt correct
 
 # prompt configuration
-# prompt pure
-# prompt_newline='%666v' # have pure as a single-line prompt
-# PROMPT=" $PROMPT"
-
-# powerlevel9k prompt config
 source  $DOTFILES/apps/zsh/plugins/powerlevel9k/powerlevel9k.zsh-theme
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context anaconda dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
-#prompt_newline='%666v'
-#PROMPT=" $PROMPT"
+DEFAULT_USER=$USER
+#POWERLEVEL9K_MODE='nerdfont-complete'
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
+POWERLEVEL9K_SHORTEN_DELIMITER=""
+POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
+POWERLEVEL9K_DIR_HOME_BACKGROUND=024
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND=250
+POWERLEVEL9K_DIR_ETC_BACKGROUND=024
+POWERLEVEL9K_DIR_DEFAULT_BACKGROUND=024
+POWERLEVEL9K_ANACONDA_BACKGROUND='166'
+POWERLEVEL9K_VCS_CLEAN_FOREGROUND='black'
+POWERLEVEL9K_VCS_CLEAN_BACKGROUND='112'
+POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND='black'
+POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='178'
+POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='black'
+POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='178'
 
 # syntax highlighting plugin
 source $DOTFILES/apps/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # fish like autosuggestions
 source $DOTFILES/apps/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#5b5d63"
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=248"
 
-# autojump
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
