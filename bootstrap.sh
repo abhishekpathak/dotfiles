@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-DOTFILES=$HOME/code/personal/dotfiles
+export DOTFILES=$HOME/code/personal/dotfiles
 
 echo "Which is the present OS (macos/ubuntu)?"
 read -e system
