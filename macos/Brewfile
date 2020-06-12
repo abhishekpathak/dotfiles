@@ -5,11 +5,9 @@ tap 'homebrew/cask-fonts'
 # CLI
 
 brew 'mas'
-brew 'bash', link: true, args: ['overwrite']
 brew 'zsh'
-brew 'vim', args: ['override-system-vi']
-brew 'git', link: true, args: ['overwrite']
-brew 'git-lfs'
+brew 'vim'
+brew 'git'
 brew 'node'
 brew 'go'
 brew 'python3'
@@ -20,11 +18,11 @@ brew 'binutils'
 brew 'diffutils'
 brew 'findutils'
 brew 'gawk'
-brew 'gnu-sed', args: ['with-default-names']
-brew 'gnu-tar', args: ['with-default-names']
-brew 'gnu-which', args: ['with-default-names']
+brew 'gnu-sed'
+brew 'gnu-tar'
+brew 'gnu-which'
 brew 'gnutls'
-brew 'grep', args: ['with-default-names']
+brew 'grep'
 brew 'gzip'
 brew 'screen'
 brew 'watch'
@@ -36,8 +34,6 @@ brew 'gcc'
 brew 'less'
 brew 'rsync'
 brew 'unzip'
-brew 'maven'
-
 
 
 # GUI
@@ -52,14 +48,10 @@ cask 'skype'
 cask 'slack'
 cask 'google-backup-and-sync'
 cask 'pycharm'
-cask 'webstorm'
-cask 'intellij-idea'
 cask 'evernote'
 cask 'alfred'
 cask 'appcleaner'
 cask 'visual-studio-code'
-cask 'dash'
-cask 'calibre'
 cask 'tunnelbear'
 mas 'tomato one', id: 907364780
 mas 'reeder 3', id: 880001334
