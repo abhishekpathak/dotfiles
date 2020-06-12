@@ -8,7 +8,6 @@ sudo apt install -y wget
 sudo apt install -y python3-pip
 sudo apt install -y vim
 sudo apt install -y git
-sudo apt install -y nodejs-dev node-gyp libssl1.0-dev npm
 sudo apt install -y golang
 sudo apt install -y python3
 sudo apt install -y tree
@@ -18,6 +17,7 @@ sudo apt install -y vlc
 sudo apt install -y snapd
 
 sudo snap install --classic code
+sudo snap install node --classic --channel=10 # https://github.com/nodesource/distributions/blob/master/README.md
 
 sudo apt -y autoremove
 
