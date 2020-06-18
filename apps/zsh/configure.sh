@@ -4,6 +4,9 @@ echo "configuring zsh ..."
 
 ln -sf $DOTFILES/apps/zsh/zshrc $HOME/.zshrc
 
+echo "syncing zsh history.."
+ln -sf ~/Dropbox/workspace/.zsh_history ~/.zsh_history
+
 # install the pure zsh prompt, https://github.com/sindresorhus/pure, added as a submodule to $DOTFILES/apps/zsh
 fpath=/usr/local/share/zsh/site-functions
 #sudo ln -sf $DOTFILES/apps/zsh/plugins/pure/pure.zsh $fpath/prompt_pure_setup

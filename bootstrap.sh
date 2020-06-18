@@ -18,5 +18,3 @@ ln -sf $DOTFILES/$system/env.sh $HOME/.env-system.sh
 find $DOTFILES/apps -name configure.sh | while read config ; do /bin/bash "${config}" ; done
 
 echo "done."
-
-
