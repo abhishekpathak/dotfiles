@@ -95,6 +95,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(org-code ((t (:background "ivory" :foreground "red1" :inherit fixed-pitch))))
+ '(org-level-1 ((t nil)))
  '(org-level-2 ((t nil)))
  '(org-level-3 ((t nil)))
  '(org-level-4 ((t nil)))
@@ -131,7 +132,14 @@
  "imghttps"
  :image-data-fun #'org-image-link)
 
-
 ;; auto-save to avoid sync conflicts as much as possible
-(add-hook 'auto-save-hook 'org-save-all-org-buffers)
+;; solution 1: use internal lib: auto-save-buffers
+;;(require 'auto-save-buffers)
+;;(run-with-idle-timer 5 t 'auto-save-buffers)
+
+;; solution 3: use MELPA package: auto-save-buffers-enhanced
+;; ref: https://github.com/kentaro/auto-save-buffers-enhanced/blob/master/auto-save-buffers-enhanced.el
+(require 'auto-save-buffers-enhanced)
+(auto-save-buffers-enhanced t)
+
 (global-auto-revert-mode t)

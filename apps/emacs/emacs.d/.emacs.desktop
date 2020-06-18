@@ -2,79 +2,31 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Sun Jun  7 15:09:18 2020
+;; Created Thu Jun 18 13:24:08 2020
 ;; Desktop file format version 208
 ;; Emacs version 26.3
 
 ;; Global section:
-(setq desktop-saved-frameset [frameset 1 (24284 46534 753407 0) (desktop . "208") "abhishek@Abhisheks-MacBook-Pro.local" nil nil ((((minibuffer . t) (font-backend mac-ct) (fontsize . 0) (font . "-*-Hack Nerd Font-normal-normal-normal-*-14-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#000000") (background-color . "#ffffff") (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (undecorated) (ns-appearance . light) (ns-transparent-titlebar . t) (z-group) (no-focus-on-map) (no-accept-focus) (menu-bar-lines . 0) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (scroll-bar-height . 0) (alpha) (fullscreen) (display-type . color) (background-mode . light) (cursor-color . "#5974ab") (environment) (frameset--id . "F21E-879C-91F0-8D91") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (visibility . t) (display . "Abhisheks-MacBook-Pro.local") (explicit-name) (tool-bar-position . top) (border-color . "#d6d6d6") (height . 66) (width . 221) (left . 0) (top . 23)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 64) (min-pixel-width . 80) (min-pixel-height-ignore . 32) (min-pixel-width-ignore . 32) (min-pixel-height-safe . 16) (min-pixel-width-safe . 16)) leaf (pixel-width . 1784) (pixel-height . 1040) (total-width . 223) (total-height . 65) (normal-height . 1.0) (normal-width . 1.0) (buffer "inbox.org" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 189) (start . 1))))])
+(setq desktop-saved-frameset [frameset 1 (24299 7584 254958 0) (desktop . "208") "abhishek@Abhisheks-MacBook-Pro.local" nil nil ((((minibuffer . t) (font-backend mac-ct) (fontsize . 0) (font . "-*-Hack Nerd Font-normal-normal-normal-*-14-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#000000") (background-color . "#ffffff") (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (undecorated) (ns-appearance . light) (ns-transparent-titlebar . t) (z-group) (no-focus-on-map) (no-accept-focus) (menu-bar-lines . 0) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (scroll-bar-height . 0) (alpha) (fullscreen) (display-type . color) (background-mode . light) (cursor-color . "#5974ab") (frameset--id . "5B5E-0E58-F4A8-4850") (frameset--mini t) (height . 36) (width . 80) (modeline . t) (unsplittable) (left . 0) (top . 23) (icon-name) (visibility . t) (display . "Abhisheks-MacBook-Pro.local") (explicit-name) (tool-bar-position . top)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 64) (min-pixel-width . 80) (min-pixel-height-ignore . 32) (min-pixel-width-ignore . 32) (min-pixel-height-safe . 16) (min-pixel-width-safe . 16)) leaf (pixel-width . 656) (pixel-height . 560) (total-width . 82) (total-height . 35) (normal-height . 1.0) (normal-width . 1.0) (buffer "smp.json" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 1) (start . 1))) (((minibuffer . t) (font-backend mac-ct) (fontsize . 0) (font . "-*-Hack Nerd Font-normal-normal-normal-*-14-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#000000") (background-color . "#ffffff") (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (undecorated) (ns-appearance . light) (ns-transparent-titlebar . t) (z-group) (no-focus-on-map) (no-accept-focus) (menu-bar-lines . 0) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (scroll-bar-height . 0) (alpha) (fullscreen) (display-type . color) (background-mode . light) (cursor-color . "#5974ab") (environment) (frameset--id . "D205-59CD-7459-4EE0") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (visibility . t) (display . "Abhisheks-MacBook-Pro.local") (explicit-name) (tool-bar-position . top) (height . 86) (width . 317) (left . 0) (top . 23)) ((min-height . 8) (min-width . 20) (min-height-ignore . 4) (min-width-ignore . 8) (min-height-safe . 2) (min-width-safe . 4) (min-pixel-height . 128) (min-pixel-width . 160) (min-pixel-height-ignore . 64) (min-pixel-width-ignore . 64) (min-pixel-height-safe . 32) (min-pixel-width-safe . 32)) hc (pixel-width . 2552) (pixel-height . 1360) (total-width . 319) (total-height . 85) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 1736) (pixel-height . 1360) (total-width . 217) (total-height . 85) (normal-height . 1.0) (normal-width . 0.6802507836990596) (buffer "airbase.org" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 17043) (start . 1))) (vc (last . t) (pixel-width . 816) (pixel-height . 1360) (total-width . 102) (total-height . 85) (normal-height . 1.0) (normal-width . 0.31974921630094044) (combination-limit) (leaf (pixel-width . 816) (pixel-height . 688) (total-width . 102) (total-height . 43) (normal-height . 0.5058823529411764) (normal-width . 1.0) (buffer "agenda.org" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 6159) (start . 5556))) (leaf (last . t) (pixel-width . 816) (pixel-height . 672) (total-width . 102) (total-height . 42) (normal-height . 0.49411764705882355) (normal-width . 1.0) (buffer "inbox.org" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 2091) (start . 1))))))])
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
-(setq search-ring '("load-path" "vikas" "@vikas" "slack" "cua"))
-(setq regexp-search-ring '("reve" "iciccle" "search" "agendasear"))
+(setq search-ring nil)
+(setq regexp-search-ring nil)
 (setq register-alist nil)
-(setq file-name-history '("~/Dropbox/workspace/inbox.org" "~/Dropbox/workspace/agenda.org" "~/Dropbox/workspace/journal.org" "~/Dropbox/workspace/airbase.org" "~/Desktop/org/airbase.org" "~/.emacs.d/init.el" "~/Desktop/org/personal.org" "~/Desktop/org/" "~/Desktop/agenda.org" "~/.emacs.d/sample.org" "~/Desktop/airbase.org" "~/Desktop/airbase.org" "~/Desktop/airbase.org" "~/.emacs.d/"))
+(setq file-name-history '("~/Dropbox/workspace/inbox.org" "~/Dropbox/workspace/agenda.org" "~/Dropbox/workspace/airbase.org" "~/.emacs.d/init.el"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 208
-  "/Users/abhishek/Dropbox/workspace/inbox.org"
-  "inbox.org"
-  'org-mode
-  '(visual-line-mode undo-tree-mode helm-mode global-auto-revert-mode org-indent-mode)
-  189
-  '(194 nil)
-  nil
-  nil
-  '((indent-tabs-mode) (buffer-display-time 24284 46190 760148 0) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (189 57 1 189))))
-
-(desktop-create-buffer 208
-  "/Users/abhishek/.emacs.d/init.el"
-  "init.el"
-  'emacs-lisp-mode
-  '(visual-line-mode eldoc-mode undo-tree-mode helm-mode global-auto-revert-mode)
-  160
-  '(160 nil)
-  nil
-  nil
-  '((buffer-display-time 24284 45861 599295 274000) (buffer-file-coding-system . prefer-utf-8-unix) (truncate-lines))
-  '((mark-ring (116 114 700 3736 4542 4489 3644 1515 3561 314 262 789 744 701 626 1636))))
-
-(desktop-create-buffer 208
-  "/Users/abhishek/Dropbox/workspace/airbase.org"
-  "airbase.org"
-  'org-mode
-  '(visual-line-mode undo-tree-mode helm-mode global-auto-revert-mode org-indent-mode)
-  1376
-  '(1376 nil)
-  nil
-  nil
-  '((indent-tabs-mode) (buffer-display-time 24284 45097 791823 33000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
-  '((mark-ring (1376))))
-
-(desktop-create-buffer 208
-  nil
-  "elpa"
-  'dired-mode
-  '(visual-line-mode helm-mode global-auto-revert-mode)
-  2516
-  '(nil nil)
-  t
-  '("/Users/abhishek/.emacs.d/elpa/")
-  '((buffer-display-time 24284 44960 415424 33000) (truncate-lines))
-  '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  nil
-  "zenburn-theme-20200305.737"
-  'dired-mode
-  '(visual-line-mode helm-mode global-auto-revert-mode)
+  "/Users/abhishek/Desktop/smp.json"
+  "smp.json"
+  'js-mode
+  '(visual-line-mode undo-tree-mode helm-mode global-auto-revert-mode)
   1
-  '(nil nil)
-  t
-  '("/Users/abhishek/.emacs.d/elpa/zenburn-theme-20200305.737/")
-  '((buffer-display-time 24284 44938 995811 33000) (truncate-lines))
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 24299 7580 977440 0) (truncate-lines))
   '((mark-ring nil)))
 
 (desktop-create-buffer 208
@@ -82,82 +34,70 @@
   "agenda.org"
   'org-mode
   '(visual-line-mode undo-tree-mode helm-mode global-auto-revert-mode org-indent-mode)
-  5080
-  '(5063 nil)
+  6159
+  '(6165 nil)
   nil
   nil
-  '((indent-tabs-mode) (buffer-display-time 24284 45275 600112 936000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
-  '((mark-ring nil)))
+  '((indent-tabs-mode) (buffer-display-time 24298 31968 70833 0) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((mark-ring (6145 6093 2775 5542 5613 5556 5067 5555 5063 5488 5869 5074 2810 1092 5869 5558))))
 
 (desktop-create-buffer 208
-  "/Users/abhishek/Dropbox/workspace/journal.org"
-  "journal.org"
-  'org-mode
-  '(visual-line-mode undo-tree-mode helm-mode global-auto-revert-mode org-indent-mode)
-  5773
-  '(5772 nil)
-  t
-  nil
-  '((indent-tabs-mode) (buffer-display-time 24284 41876 98714 33000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (5693 5773 5773 5773 5773))))
-
-(desktop-create-buffer 208
-  "/Users/abhishek/Desktop/org/airbase.org"
+  "/Users/abhishek/Dropbox/workspace/airbase.org"
   "airbase.org"
   'org-mode
   '(visual-line-mode undo-tree-mode helm-mode global-auto-revert-mode org-indent-mode)
-  4934
-  '(8281 nil)
+  17043
+  '(16998 nil)
   nil
   nil
-  '((indent-tabs-mode) (buffer-display-time 24284 39568 702016 517000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
-  '((mark-ring (7216 8018 8281 28 8281 8281 4934 4934))))
+  '((indent-tabs-mode) (buffer-display-time 24298 31968 70833 0) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((mark-ring (16109 16720 15978 4808 6288 5539 5876 5877 5877 5917 5877 5877 5673 5089 5398 4817))))
 
 (desktop-create-buffer 208
+  "/Users/abhishek/Dropbox/workspace/inbox.org"
+  "inbox.org"
+  'org-mode
+  '(visual-line-mode undo-tree-mode helm-mode global-auto-revert-mode org-indent-mode)
+  2091
+  '(1165 nil)
   nil
-  "Dropbox"
-  'dired-mode
-  '(visual-line-mode helm-mode global-auto-revert-mode)
-  565
-  '(565 nil)
+  nil
+  '((indent-tabs-mode) (buffer-display-time 24298 31968 70833 0) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (1378 1373 8 1310 499 1432 1452 1551 1441 2061 2076))))
+
+(desktop-create-buffer 208
+  "https://docs.google.com/spreadsheets/d/1JFe2b1Lw4QvrSI1aIai9w1L1-BNKwwPUiaA4MJ5kVc8/edit#gid=0"
+  "edit#gid=0"
+  'mhtml-mode
+  '(visual-line-mode undo-tree-mode helm-mode global-auto-revert-mode)
+  1338
+  '(1338 nil)
   t
-  '("/Users/abhishek/Dropbox/")
-  '((buffer-display-time 24283 41793 87240 517000) (truncate-lines))
+  nil
+  '((buffer-display-time 24296 24094 476125 0) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
   '((mark-ring nil)))
 
 (desktop-create-buffer 208
+  "/Users/abhishek/code/personal/dotfiles/apps/emacs/emacs.d/init.el"
+  "init.el"
+  'emacs-lisp-mode
+  '(visual-line-mode eldoc-mode undo-tree-mode helm-mode global-auto-revert-mode)
+  968
+  '(3317 nil)
   nil
-  "abhishek"
-  'dired-mode
-  '(visual-line-mode helm-mode global-auto-revert-mode)
-  982
-  '(nil nil)
-  t
-  '("/Users/abhishek/")
-  '((buffer-display-time 24283 16738 965289 517000) (truncate-lines))
-  '((mark-ring nil)))
+  nil
+  '((buffer-display-time 24293 56412 371958 0) (buffer-file-coding-system . prefer-utf-8-unix) (truncate-lines))
+  '((mark-ring (3367 4906 4642 4456 4457 4877 4565 3315 3445))))
 
 (desktop-create-buffer 208
-  "/Users/abhishek/screenshots/Screenshot.png"
-  "Screenshot.png"
-  'image-mode
+  "/Users/abhishek/code/personal/dotfiles/apps/emacs/emacs.d/url/cookies"
+  "cookies"
+  'fundamental-mode
   '(visual-line-mode undo-tree-mode helm-mode global-auto-revert-mode)
   1
-  '(1 nil)
-  nil
-  nil
-  '((buffer-display-time 24269 10848 570445 353000) (buffer-file-coding-system . no-conversion) (truncate-lines))
-  '((mark-ring (1))))
-
-(desktop-create-buffer 208
-  nil
-  "org"
-  'dired-mode
-  '(visual-line-mode helm-mode global-auto-revert-mode)
-  243
   '(nil nil)
-  t
-  '("/Users/abhishek/Desktop/org/")
-  '((buffer-display-time 24284 46190 756465 0) (truncate-lines))
+  nil
+  nil
+  '((buffer-display-time) (buffer-file-coding-system . undecided-unix) (truncate-lines))
   '((mark-ring nil)))
 
