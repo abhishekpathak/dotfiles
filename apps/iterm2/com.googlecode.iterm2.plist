@@ -92,7 +92,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>546 356 700 622 0 0 1792 1097 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1792 1097 0 0 1792 1097 </string>
+	<string>0 0 2560 1417 0 0 2560 1417 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -766,7 +766,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>E8723B75-8B3D-4809-BBE5-C6204CF9DC8B</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>55</integer>
+	<integer>79</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1485,16 +1485,16 @@
 	</dict>
 	<key>NoSyncSearchHistory2</key>
 	<array>
-		<string>subscr</string>
-		<string>voidqc</string>
-		<string>hasaccount</string>
-		<string>sync</string>
-		<string>sync_ver</string>
-		<string>company</string>
-		<string>integration</string>
-		<string>bulk</string>
-		<string>POST /ledger/integration</string>
-		<string>POST/ledger/integration</string>
+		<string>seq scan</string>
+		<string>prepaym</string>
+		<string>is_auto_sync</string>
+		<string>is_auto_sn</string>
+		<string>is_ait</string>
+		<string>is_synced_</string>
+		<string>is_symn</string>
+		<string>set_prepa</string>
+		<string>sert</string>
+		<string>prepayment_accountledger</string>
 	</array>
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
 	<real>599728476.58324397</real>
@@ -1556,11 +1556,13 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-05-11T12:06:36Z</date>
+	<date>2020-06-17T22:55:35Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUSkippedVersion</key>
-	<string>3.3.9</string>
+	<string>3.3.11</string>
+	<key>ShowFullScreenTabBar</key>
+	<false/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
