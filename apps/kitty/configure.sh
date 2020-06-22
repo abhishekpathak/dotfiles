@@ -1,0 +1,1 @@
+ln -sf $DOTFILES/apps/kitty/kitty.conf $HOME/.config/kitty/kitty.conf
