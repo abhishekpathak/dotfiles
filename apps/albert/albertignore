@@ -1,2 +1,3 @@
 # Ignore code directories
-$HOME/code
+# the paths are relative to the position of this ignore file ($HOME/.albertignore)
+code

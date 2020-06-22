@@ -1,4 +1,4 @@
-export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.emacs.d/bin:$HOME/.local/bin:$PATH"
 
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
 
