@@ -9,6 +9,7 @@
 (setq org-directory "~/org/")
 
 (setq display-line-numbers-type t)
+(setq-default line-spacing 0.5)
 
 (after! org
   (set-face-attribute 'org-link nil
