@@ -10,3 +10,6 @@
 [submodule "apps/zsh/plugins/powerlevel9k"]
 	path = apps/zsh/plugins/powerlevel9k
 	url = git@github.com:Powerlevel9k/powerlevel9k.git
+[submodule "apps/kitty/kitty-themes"]
+	path = apps/kitty/kitty-themes
+	url = https://github.com/dexpota/kitty-themes.git
