@@ -41,7 +41,7 @@ brew 'unzip'
 cask_args appdir: "/Applications"
 cask 'iterm2'
 cask 'google-chrome'
-cask 'spectacle'
+cask 'rectangle'
 cask 'vlc'
 cask 'dropbox'
 cask 'skype'
@@ -53,6 +53,7 @@ cask 'alfred'
 cask 'appcleaner'
 cask 'visual-studio-code'
 cask 'tunnelbear'
+cask 'kitty'
 mas 'tomato one', id: 907364780
 mas 'reeder 3', id: 880001334
 mas 'AutoMute', id: 1118136179
