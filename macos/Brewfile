@@ -8,9 +8,7 @@ brew 'mas'
 brew 'zsh'
 brew 'vim'
 brew 'git'
-brew 'node'
 brew 'go'
-brew 'python3'
 brew 'tree'
 brew 'autojump'
 brew 'coreutils'
@@ -34,6 +32,9 @@ brew 'gcc'
 brew 'less'
 brew 'rsync'
 brew 'unzip'
+brew 'ripgrep'
+brew 'fd'
+brew 'shellcheck'
 
 
 # GUI
@@ -49,11 +50,12 @@ cask 'slack'
 cask 'google-backup-and-sync'
 cask 'pycharm'
 cask 'evernote'
-cask 'alfred'
+# cask 'alfred' - installs alfred4
 cask 'appcleaner'
 cask 'visual-studio-code'
 cask 'tunnelbear'
 cask 'kitty'
+cask 'monitorcontrol'
 mas 'tomato one', id: 907364780
 mas 'reeder 3', id: 880001334
 mas 'AutoMute', id: 1118136179

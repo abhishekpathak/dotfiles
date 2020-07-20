@@ -48,3 +48,8 @@
 ;(unpin! pinned-package another-pinned-package)
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;(unpin! t)
+
+(package! real-auto-save)
+;;(package! org-yt
+;;  :recipe (:host github :repo "TobiasZawada/org-yt"
+;;  :files ("org-yt.el")))

@@ -18,3 +18,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # add kitty binary to PATH
 export PATH="/Applications/kitty.app/Contents/MacOS/:$PATH"
+
+# add doom command to $PATH
+export PATH="$HOME/.emacs.d/bin:$PATH"
