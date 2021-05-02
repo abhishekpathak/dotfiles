@@ -21,3 +21,7 @@ export PATH="/Applications/kitty.app/Contents/MacOS/:$PATH"
 
 # add doom command to $PATH
 export PATH="$HOME/.emacs.d/bin:$PATH"
+
+# add pyenv init to the shell. Make sure that this is placed toward the end of the shell configuration file 
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
