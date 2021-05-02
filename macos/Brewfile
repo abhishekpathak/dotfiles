@@ -35,6 +35,8 @@ brew 'unzip'
 brew 'ripgrep'
 brew 'fd'
 brew 'shellcheck'
+brew 'pyenv'
+brew 'pyenv-virtualenv'
 
 
 # GUI
