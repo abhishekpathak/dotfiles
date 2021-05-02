@@ -82,3 +82,17 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=248"
 
 # make python 3 the default python executable
 alias python="python3"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/terraform terraform
+
+# Airbase-specific
+export XERO_RSA_KEY_PATH=$CODE/airbase/airbase-backend/.xero.pem
+
+export PATH="$HOME/.poetry/bin:$PATH"
