@@ -9,9 +9,6 @@ export XDG_CONFIG_HOME=$HOME/.config    # https://wiki.archlinux.org/index.php/X
 export CODE=$HOME/code
 export DOTFILES=$CODE/personal/dotfiles
 
-# preferred aliases
-alias ll="ls -lh"
-
 # Load system-specific-env
 source $HOME/.env-system.sh
 
@@ -33,10 +30,9 @@ autoload -Uz compinit; compinit
 # initialize the prompt system
 autoload -Uz promptinit; promptinit
 
-
 # History configuration
 # ref: https://github.com/robbyrussell/oh-my-zsh/blob/master/lib/history.zsh
-[ -z "$HISTFILE" ] && HISTFILE="$HOME/.zsh_history"
+[ -z "$HISTFILE" ] && HISTFILE="$HOME/Dropbox/workspace/zsh_history"
 HISTSIZE=50000
 SAVEHIST=10000
 setopt extended_history       # record timestamp of command in HISTFILE
@@ -52,12 +48,9 @@ setopt share_history          # share command history data
 setopt correct
 
 # prompt configuration
-source  $DOTFILES/apps/zsh/plugins/powerlevel9k/powerlevel9k.zsh-theme
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context virtualenv dir vcs)
 POWERLEVEL9K_DISABLE_RPROMPT=true
-#POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
 DEFAULT_USER=$USER
-#POWERLEVEL9K_MODE='nerdfont-complete'
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
 POWERLEVEL9K_SHORTEN_DELIMITER=""
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
@@ -73,26 +66,11 @@ POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='178'
 POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='black'
 POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='178'
 
-# syntax highlighting plugin
-source $DOTFILES/apps/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 # fish like autosuggestions
-source $DOTFILES/apps/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=248"
 
-# make python 3 the default python executable
-alias python="python3"
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
-
 autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /usr/local/bin/terraform terraform
 
-# Airbase-specific
-export XERO_RSA_KEY_PATH=$CODE/airbase/airbase-backend/.xero.pem
-
-export PATH="$HOME/.poetry/bin:$PATH"
+# add pyenv init to the shell. Make sure that this is placed toward the end of the shell configuration file 
+eval "$(pyenv init --path)"
+eval "$(pyenv virtualenv-init -)"
