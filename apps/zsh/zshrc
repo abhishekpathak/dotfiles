@@ -71,6 +71,13 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=248"
 
 autoload -U +X bashcompinit && bashcompinit
 
+# start scmpuff (https://github.com/mroth/scmpuff)
+eval "$(scmpuff init -s)"
+
 # add pyenv init to the shell. Make sure that this is placed toward the end of the shell configuration file 
 eval "$(pyenv init --path)"
 eval "$(pyenv virtualenv-init -)"
+# pnpm
+export PNPM_HOME="/Users/abhishek/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end

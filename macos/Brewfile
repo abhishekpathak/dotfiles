@@ -58,6 +58,7 @@ cask 'visual-studio-code'
 cask 'tunnelbear'
 cask 'kitty'
 cask 'monitorcontrol'
+cask 'linearmouse'
 mas 'tomato one', id: 907364780
 mas 'reeder 3', id: 880001334
 mas 'AutoMute', id: 1118136179

@@ -1,1 +1,1 @@
-export PATH="$HOME/.poetry/bin:$PATH"
+export PATH="/Users/abhishek/.local/bin:$PATH"
