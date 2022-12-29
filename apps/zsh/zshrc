@@ -12,20 +12,12 @@ export DOTFILES=$CODE/personal/dotfiles
 # Load system-specific-env
 source $HOME/.env-system.sh
 
-# Load all env.sh files located inside directories
-typeset config_files
-config_files=($DOTFILES/apps/**/env.sh)
-for file in "${config_files[@]}"
-do
-  source $file
-done
-unset config_files
-
 # turn off terminal beep
 unsetopt BEEP
 
 # initialize zsh completions
 autoload -Uz compinit; compinit
+autoload -U +X bashcompinit && bashcompinit
 
 # initialize the prompt system
 autoload -Uz promptinit; promptinit
@@ -69,15 +61,11 @@ POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='178'
 # fish like autosuggestions
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=248"
 
-autoload -U +X bashcompinit && bashcompinit
-
-# start scmpuff (https://github.com/mroth/scmpuff)
-eval "$(scmpuff init -s)"
-
-# add pyenv init to the shell. Make sure that this is placed toward the end of the shell configuration file 
-eval "$(pyenv init --path)"
-eval "$(pyenv virtualenv-init -)"
-# pnpm
-export PNPM_HOME="/Users/abhishek/Library/pnpm"
-export PATH="$PNPM_HOME:$PATH"
-# pnpm end
+# Load all env.sh files located inside directories
+typeset config_files
+config_files=($DOTFILES/apps/**/env.sh)
+for file in "${config_files[@]}"
+do
+  source $file
+done
+unset config_files

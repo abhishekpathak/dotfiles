@@ -1,1 +1,0 @@
-export PATH="/Users/abhishek/.local/bin:$PATH"
