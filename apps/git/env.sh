@@ -3,7 +3,7 @@ alias ga='git add -p'
 alias gb='git branch'
 alias gc='git commit'
 alias gpull='git pull'
-alias gpush='git push'
+alias gpush='git pull && git push'
 alias gl='git log'
 alias gco='git checkout'
 alias gd='git diff'
@@ -20,4 +20,4 @@ git_prune_gone_branches() {
 }
 
 # start scmpuff (https://github.com/mroth/scmpuff)
-eval "$(scmpuff init -s)"
+# eval "$(scmpuff init -s)"
