@@ -1,1 +1,5 @@
 Here I store various configuration files to quickly set up the environment.
+To start:
+
+1. clone/download the repository to $HOME/code/personal/dotfiles
+2. run bash $HOME/code/personal/dotfiles/bootstrap.sh

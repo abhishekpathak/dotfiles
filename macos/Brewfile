@@ -2,8 +2,7 @@
 tap 'homebrew/cask-fonts'
 
 
-# CLI
-
+# CLI utils
 brew 'mas'
 brew 'zsh'
 brew 'vim'
@@ -23,7 +22,6 @@ brew 'gnutls'
 brew 'grep'
 brew 'gzip'
 brew 'screen'
-brew 'watch'
 brew 'gnupg'
 brew 'gnupg2'
 brew 'make'
@@ -34,34 +32,23 @@ brew 'rsync'
 brew 'unzip'
 brew 'ripgrep'
 brew 'fd'
-brew 'shellcheck'
-brew 'pyenv'
-brew 'pyenv-virtualenv'
 
 
-# GUI
-
+# GUI utils
 cask_args appdir: "/Applications"
-cask 'iterm2'
-cask 'google-chrome'
-cask 'rectangle'
 cask 'vlc'
 cask 'dropbox'
-cask 'skype'
-cask 'slack'
 cask 'google-backup-and-sync'
-cask 'pycharm'
-cask 'evernote'
-# cask 'alfred' - installs alfred4
+cask 'bitwarden'
 cask 'appcleaner'
-cask 'visual-studio-code'
-cask 'tunnelbear'
-cask 'kitty'
-cask 'monitorcontrol'
 cask 'linearmouse'
-mas 'tomato one', id: 907364780
-mas 'reeder 3', id: 880001334
-mas 'AutoMute', id: 1118136179
+cask 'lunar' # instead of monitorcontrol
+cask 'raycast'
+cask 'rectangle'
+cask 'calibre'
+cask 'licecap'
+cask 'visual-studio-code'
+
 
 # extras
 
