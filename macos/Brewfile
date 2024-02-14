@@ -23,7 +23,6 @@ brew 'grep'
 brew 'gzip'
 brew 'screen'
 brew 'gnupg'
-brew 'gnupg2'
 brew 'make'
 brew 'cmake'
 brew 'gcc'
@@ -32,19 +31,21 @@ brew 'rsync'
 brew 'unzip'
 brew 'ripgrep'
 brew 'fd'
+brew 'pyenv'
 
 
 # GUI utils
 cask_args appdir: "/Applications"
+#mas install 937984704 # Amphetamine
 cask 'vlc'
 cask 'dropbox'
-cask 'google-backup-and-sync'
-cask 'bitwarden'
+cask 'google-drive'
+#cask 'bitwarden'
 cask 'appcleaner'
 cask 'linearmouse'
 cask 'lunar' # instead of monitorcontrol
 cask 'raycast'
-cask 'rectangle'
+#cask 'rectangle'
 cask 'calibre'
 cask 'licecap'
 cask 'visual-studio-code'
@@ -53,8 +54,8 @@ cask 'visual-studio-code'
 # extras
 
 # fonts
-cask 'font-meslo-nerd-font-mono'
-cask 'font-hack-nerd-font'
+#cask 'font-meslo-nerd-font-mono'
+#cask 'font-hack-nerd-font'
 
 
 
