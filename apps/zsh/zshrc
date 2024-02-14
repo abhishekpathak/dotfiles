@@ -1,36 +1,42 @@
 #!/usr/bin/env zsh
 
 # uncomment this for profiling zshrc
-#zmodload zsh/zprof
+# zmodload zsh/zprof
 
 # set up locales
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+
+# turn off terminal beep
+unsetopt BEEP
 
 # set up global directories
 export XDG_CONFIG_HOME=$HOME/.config    # https://wiki.archlinux.org/index.php/XDG_Base_Directory_support
 export CODE=$HOME/code
 export DOTFILES=$CODE/personal/dotfiles
 
-# Load system-specific-env
+# source system-specific-env
 source $HOME/.env-system.sh
 
-# turn off terminal beep
-unsetopt BEEP
-
-# initialize zsh completions
-# autoload -Uz compinit; compinit
-autoload -Uz compinit
-for dump in ~/.zcompdump(N.mh+24); do
-  compinit
+# source all app-specific env.sh files
+typeset config_files
+config_files=($DOTFILES/apps/**/env.sh)
+for file in "${config_files[@]}"
+do
+  source $file
 done
-compinit -C
-autoload -U +X bashcompinit && bashcompinit
+unset config_files
 
-# initialize the prompt system
-autoload -Uz promptinit; promptinit
+# zsh completions configuration
+skip_global_compinit=1
+autoload -Uz compinit bashcompinit
+compinit
+bashcompinit
+setopt correct
+# fish like autosuggestions
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=248"
 
-# History configuration
+# zsh history configuration
 # ref: https://github.com/robbyrussell/oh-my-zsh/blob/master/lib/history.zsh
 [ -z "$HISTFILE" ] && HISTFILE="$HOME/Dropbox/workspace/zsh_history"
 HISTSIZE=50000
@@ -43,11 +49,12 @@ setopt hist_verify            # show command with history expansion to user befo
 setopt inc_append_history     # add commands to HISTFILE in order of execution
 setopt share_history          # share command history data
 
-# zsh completion configuration.
-# ref: http://zsh.sourceforge.net/Doc/Release/Options.html
-setopt correct
 
 # prompt configuration
+# initialize the prompt system
+autoload -Uz promptinit; promptinit
+
+# Option 1: Powerlevel9k prompt
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context virtualenv dir vcs)
 POWERLEVEL9K_DISABLE_RPROMPT=true
 DEFAULT_USER=$USER
@@ -66,17 +73,8 @@ POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='178'
 POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='black'
 POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='178'
 
-# fish like autosuggestions
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=248"
-
-# Load all env.sh files located inside directories
-typeset config_files
-config_files=($DOTFILES/apps/**/env.sh)
-for file in "${config_files[@]}"
-do
-  source $file
-done
-unset config_files
+# Option 2: Starship prompt, https://github.com/starship/starship
+# eval "$(starship init zsh)"
 
 # uncomment this for profiling zshrc
 # zprof
