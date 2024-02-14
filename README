@@ -1,5 +1,6 @@
 Here I store various configuration files to quickly set up the environment.
 To start:
 
-1. clone/download the repository to $HOME/code/personal/dotfiles
-2. run bash $HOME/code/personal/dotfiles/bootstrap.sh
+1. clone/download the repository to `$HOME/code/personal/dotfiles`
+2. checkout the submodules as well: `git submodule update --init --recursive`
+3. run the bootstrap script: `bash $HOME/code/personal/dotfiles/bootstrap.sh`
