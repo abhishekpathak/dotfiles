@@ -3,4 +3,5 @@ To start:
 
 1. clone/download the repository to `$HOME/code/personal/dotfiles`
 2. checkout the submodules as well: `git submodule update --init --recursive`
+3. download and install Dropbox. Sync the folder `workspace`.
 3. run the bootstrap script: `/bin/bash $HOME/code/personal/dotfiles/bootstrap.sh`

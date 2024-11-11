@@ -1,10 +1,14 @@
 # taps
 tap 'homebrew/cask-fonts'
+tap 'buo/cask-upgrade'
 
 
 # CLI utils
 brew 'mas'
 brew 'zsh'
+brew 'zsh-completions'
+brew 'zsh-syntax-highlighting'
+brew 'zsh-autosuggestions'
 brew 'vim'
 brew 'git'
 brew 'go'
@@ -36,19 +40,25 @@ brew 'pyenv'
 
 # GUI utils
 cask_args appdir: "/Applications"
-#mas install 937984704 # Amphetamine
+mas install 937984704 # Amphetamine
 cask 'vlc'
 cask 'dropbox'
 cask 'google-drive'
-#cask 'bitwarden'
+cask 'bitwarden'
 cask 'appcleaner'
 cask 'linearmouse'
 cask 'lunar' # instead of monitorcontrol
 cask 'raycast'
-#cask 'rectangle'
+cask 'rectangle'
 cask 'calibre'
 cask 'licecap'
 cask 'visual-studio-code'
+cask 'firefox'
+casl 'firefox@developer-edition'
+cask 'arc'
+cask 'iterm2'
+cask 'pycharm-ce'
+
 
 
 # extras
