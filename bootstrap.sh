@@ -1,7 +1,9 @@
 #!/bin/bash
 set -e
 
-export DOTFILES=$HOME/code/personal/dotfiles
+export PERSONAL=$HOME/code/personal
+export DOTFILES=$PERSONAL/dotfiles
+export WORKSPACE=$PERSONAL/workspace
 
 #echo "Which is the present OS (macos/ubuntu)?"
 #read -e system

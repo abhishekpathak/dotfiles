@@ -1,5 +1,4 @@
 # taps
-tap 'homebrew/cask-fonts'
 tap 'buo/cask-upgrade'
 
 
@@ -40,11 +39,11 @@ brew 'pyenv'
 
 # GUI utils
 cask_args appdir: "/Applications"
-mas install 937984704 # Amphetamine
+#mas install 937984704 # Amphetamine
 cask 'vlc'
-cask 'dropbox'
+#cask 'dropbox'
 cask 'google-drive'
-cask 'bitwarden'
+#cask 'bitwarden'
 cask 'appcleaner'
 cask 'linearmouse'
 cask 'lunar' # instead of monitorcontrol
@@ -53,12 +52,11 @@ cask 'rectangle'
 cask 'calibre'
 cask 'licecap'
 cask 'visual-studio-code'
-cask 'firefox'
-casl 'firefox@developer-edition'
-cask 'arc'
+#cask 'firefox'
+cask 'firefox@developer-edition'
+#cask 'arc'
 cask 'iterm2'
 cask 'pycharm-ce'
-cask 'font-hack-nerd-font'
 
 
 
@@ -66,7 +64,7 @@ cask 'font-hack-nerd-font'
 
 # fonts
 #cask 'font-meslo-nerd-font-mono'
-#cask 'font-hack-nerd-font'
+cask 'font-hack-nerd-font'
 
 
 
