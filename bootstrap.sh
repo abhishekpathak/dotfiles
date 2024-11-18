@@ -3,8 +3,9 @@ set -e
 
 export DOTFILES=$HOME/code/personal/dotfiles
 
-echo "Which is the present OS (macos/ubuntu)?"
-read -e system
+#echo "Which is the present OS (macos/ubuntu)?"
+#read -e system
+system="macos"
 
 # configure the system 
 # 1. install applications

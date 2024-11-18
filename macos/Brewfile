@@ -58,6 +58,7 @@ casl 'firefox@developer-edition'
 cask 'arc'
 cask 'iterm2'
 cask 'pycharm-ce'
+cask 'font-hack-nerd-font'
 
 
 
