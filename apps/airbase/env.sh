@@ -9,3 +9,7 @@ export DD_TRACE_ENABLED=False
 export PNPM_HOME="/Users/abhishek/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
+
+# ImageMagick
+export MAGICK_HOME=/opt/homebrew/opt/imagemagick
+export PATH="$MAGICK_HOME/bin:$PATH"
