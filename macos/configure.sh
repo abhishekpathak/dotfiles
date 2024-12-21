@@ -15,13 +15,11 @@ BREWFILE=$DOTFILES/macos/Brewfile
 echo "Installing apps listed in $BREWFILE..."
 brew bundle --file=$BREWFILE
 
-echo "
-############### please install the following manually: ###############################
- # java
- "
+# suppress "Last login: ..." message on terminal startup
+touch $HOME/.hushlogin
+
 
 echo "Set up finder preferences..."
-
 echo "Show full file path in finder status bar."
 defaults write com.apple.finder ShowPathbar -bool true
 echo "Don't write DS_Store files to network shares or USB drives."
@@ -36,7 +34,6 @@ defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
 
 echo "Set up keyboard preferences..."
-
 echo "Disable press-and-hold for keys in favor of key repeat."
 defaults write -g ApplePressAndHoldEnabled -bool false
 echo "Set a really fast key repeat."
@@ -45,7 +42,6 @@ defaults write NSGlobalDomain KeyRepeat -int 5
 echo "Set up privacy preferences..."
 
 echo "Set up screenshots preferences..."
-
 echo "Save screenshots in PNG format."
 defaults write com.apple.screencapture type -string png
 echo "Save screenshots to user screenshots directory instead of desktop."

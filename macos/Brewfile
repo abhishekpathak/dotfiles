@@ -35,6 +35,7 @@ brew 'unzip'
 brew 'ripgrep'
 brew 'fd'
 brew 'pyenv'
+brew 'direnv'
 
 
 # GUI utils

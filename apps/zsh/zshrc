@@ -81,6 +81,7 @@ plugins=(
   virtualenv
   zsh-autosuggestions
   zsh-syntax-highlighting
+  # direnv
 )
 
 
