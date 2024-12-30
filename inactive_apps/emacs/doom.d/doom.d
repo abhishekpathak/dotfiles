@@ -1,1 +1,0 @@
-/Users/abhishek/code/personal/dotfiles/apps/emacs/doom.d

@@ -1,9 +1,4 @@
-# taps
-tap 'buo/cask-upgrade'
-
-
 # CLI utils
-brew 'mas'
 brew 'zsh'
 brew 'zsh-completions'
 brew 'zsh-syntax-highlighting'
@@ -36,36 +31,31 @@ brew 'ripgrep'
 brew 'fd'
 brew 'pyenv'
 brew 'direnv'
+brew 'fzf'
+brew 'zoxide'
+brew 'shellcheck'
 
-
-# GUI utils
-cask_args appdir: "/Applications"
-#mas install 937984704 # Amphetamine
-cask 'vlc'
-#cask 'dropbox'
-cask 'google-drive'
-#cask 'bitwarden'
-cask 'appcleaner'
-cask 'linearmouse'
-cask 'lunar' # instead of monitorcontrol
-cask 'raycast'
-cask 'rectangle'
-cask 'calibre'
-cask 'licecap'
-cask 'visual-studio-code'
-#cask 'firefox'
-cask 'firefox@developer-edition'
-#cask 'arc'
-cask 'iterm2'
-cask 'pycharm-ce'
-
-
-
-# extras
-
-# fonts
-#cask 'font-meslo-nerd-font-mono'
-cask 'font-hack-nerd-font'
+# Applications
+brew 'kitty'
+brew 'todoist'
+brew 'hyperkey'
+brew 'vlc'
+brew 'dropbox'
+brew 'google-drive'
+brew 'bitwarden'
+brew 'appcleaner'
+brew 'linearmouse'
+brew 'lunar'
+brew 'raycast'
+brew 'rectangle'
+brew 'calibre'
+brew 'licecap'
+brew 'visual-studio-code'
+brew 'firefox'
+brew 'firefox@developer-edition'
+brew 'arc'
+brew 'iterm2'
+brew 'pycharm-ce'
 
 
 

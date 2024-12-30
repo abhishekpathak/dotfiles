@@ -969,12 +969,16 @@
 			</dict>
 			<key>Ansi 4 Color (Light)</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.73333334922790527</real>
+				<real>0.90778487920761108</real>
+				<key>Color Space</key>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.0</real>
+				<real>0.67312115430831909</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.64277452230453491</real>
 			</dict>
 			<key>Ansi 5 Color</key>
 			<dict>
@@ -2147,6 +2151,11 @@
 	<true/>
 	<key>TabStyleWithAutomaticOption</key>
 	<integer>5</integer>
+	<key>ToolbeltTools</key>
+	<array>
+		<string>Profiles</string>
+		<string>Snippets</string>
+	</array>
 	<key>UseBorder</key>
 	<false/>
 	<key>VisualIndicatorForEsc</key>

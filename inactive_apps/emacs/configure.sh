@@ -1,1 +1,0 @@
-ln -sf $HOME/code/personal/dotfiles/apps/emacs/doom.d $HOME/.doom.d
