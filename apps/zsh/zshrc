@@ -16,7 +16,8 @@ plugins=(
 )
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 source $HOME/.oh-my-zsh/oh-my-zsh.sh
-
+: ${AGNOSTER_VENV_FG:=black}
+: ${AGNOSTER_VENV_BG:=white}
 # -------------------------------- User + Locale config --------------------------------
 DEFAULT_USER="apathak"
 export LC_ALL=en_US.UTF-8
@@ -86,3 +87,11 @@ eval "$(zoxide init --cmd cd zsh)"
 
 # uncomment this for profiling zshrc
 # zprof
+
+# pnpm
+export PNPM_HOME="/Users/abhishek/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
