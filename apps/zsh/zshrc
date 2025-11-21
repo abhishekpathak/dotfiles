@@ -12,9 +12,10 @@ export LANG=en_US.UTF-8
 export MANPATH="/usr/local/man:$MANPATH"
 export PATH="$HOME/.local/bin:$PATH"
 export XDG_CONFIG_HOME=$HOME/.config    # https://wiki.archlinux.org/index.php/XDG_Base_Directory_support
-export PERSONAL=$HOME/code/personal
+export WORKSPACE=$HOME/workspace
+export STORE=$WORKSPACE/store
+export PERSONAL=$WORKSPACE/personal
 export DOTFILES=$PERSONAL/dotfiles
-export WORKSPACE=$PERSONAL/workspace
 
 # -------------------------------- env --------------------------------
 # source os-specific-env

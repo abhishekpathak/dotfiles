@@ -1,1 +1,1 @@
-ln -s $DOTFILES/apps/starship/starship.toml $XDG_CONFIG_HOME/starship.toml
+ln -sf $DOTFILES/apps/starship/starship.toml $XDG_CONFIG_HOME/starship.toml

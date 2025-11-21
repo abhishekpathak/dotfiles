@@ -1,12 +1,14 @@
 #!/bin/bash
 set -e
 
-export PERSONAL=$HOME/code/personal
+export WORKSPACE=$HOME/workspace
+export STORE=$WORKSPACE/store
+export PERSONAL=$WORKSPACE/personal
 export DOTFILES=$PERSONAL/dotfiles
-export WORKSPACE=$PERSONAL/workspace
 
-#echo "Which is the present OS (macos/ubuntu)?"
-#read -e system
+
+# echo "Which is the present OS (macos/ubuntu)?"
+# read -e system
 system="macos"
 
 # configure the system 

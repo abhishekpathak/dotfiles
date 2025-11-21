@@ -6,8 +6,9 @@ brew install libmagic  # for mime-type detection
 brew install imagemagick # for conversion to image using Wand
 
 # Then softlink the missing libraries to a directory where they will be found.
-sudo ln -s /opt/homebrew/lib/libcairo.2.dylib /usr/local/lib/
-sudo ln -s /opt/homebrew/lib/libgobject-2.0.dylib /usr/local/lib/
-sudo ln -s /opt/homebrew/lib/libpango-1.0.dylib /usr/local/lib/
-sudo ln -s /opt/homebrew/lib/libpangocairo-1.0.dylib /usr/local/lib/
-sudo ln -s /opt/homebrew/lib/libpangoft2-1.0.dylib /usr/local/lib/
+# remove the comments and run the following manually:
+# sudo ln -s /opt/homebrew/lib/libcairo.2.dylib /usr/local/lib/
+# sudo ln -s /opt/homebrew/lib/libgobject-2.0.dylib /usr/local/lib/
+# sudo ln -s /opt/homebrew/lib/libpango-1.0.dylib /usr/local/lib/
+# sudo ln -s /opt/homebrew/lib/libpangocairo-1.0.dylib /usr/local/lib/
+# sudo ln -s /opt/homebrew/lib/libpangoft2-1.0.dylib /usr/local/lib/
