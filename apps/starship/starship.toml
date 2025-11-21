@@ -46,7 +46,7 @@ format = "[$duration]($style) "
 style = "blue"
 
 [python]
-format = "[$virtualenv]($style) "
+format = "[ $version $virtualenv]($style) "
 style = "bright-black"
 detect_extensions = []
 detect_files = []
