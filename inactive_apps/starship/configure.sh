@@ -1,1 +1,0 @@
-ln -s /Users/abhishek/code/personal/dotfiles/apps/starship/starship.toml /Users/abhishek/.config/

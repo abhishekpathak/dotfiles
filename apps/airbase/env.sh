@@ -12,6 +12,9 @@ export K6_DB_PWD=airbase
 
 # pnpm
 export PNPM_HOME="/Users/abhishek/Library/pnpm"
-export PATH="$PNPM_HOME:$PATH"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
 
 

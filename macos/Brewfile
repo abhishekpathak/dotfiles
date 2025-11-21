@@ -29,16 +29,14 @@ brew 'rsync'
 brew 'unzip'
 brew 'ripgrep'
 brew 'fd'
-# brew 'pyenv'
 brew 'direnv'
 brew 'fzf'
 brew 'zoxide'
 brew 'shellcheck'
+brew 'starship'
 
 # Applications
-brew 'kitty'
 brew 'todoist'
-brew 'hyperkey'
 brew 'vlc'
 brew 'dropbox'
 brew 'google-drive'
@@ -53,9 +51,7 @@ brew 'licecap'
 brew 'visual-studio-code'
 brew 'firefox'
 brew 'firefox@developer-edition'
-brew 'arc'
 brew 'iterm2'
-brew 'pycharm-ce'
 
 
 

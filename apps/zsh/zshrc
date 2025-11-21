@@ -3,27 +3,12 @@
 # uncomment this for profiling zshrc
 # zmodload zsh/zprof
 
-# -------------------------------- Oh My ZSH config --------------------------------
-ZSH_THEME="agnoster"
-zstyle ':omz:update' mode reminder
-zstyle ':omz:update' frequency 30
-plugins=(
-  git
-  virtualenv
-  fzf-tab
-  zsh-autosuggestions
-  zsh-syntax-highlighting
-)
-fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
-source $HOME/.oh-my-zsh/oh-my-zsh.sh
-: ${AGNOSTER_VENV_FG:=black}
-: ${AGNOSTER_VENV_BG:=white}
-# -------------------------------- User + Locale config --------------------------------
+# -------------------------------- User + Locale --------------------------------
 DEFAULT_USER="apathak"
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-# -------------------------------- Path config --------------------------------
+# -------------------------------- Path --------------------------------
 export MANPATH="/usr/local/man:$MANPATH"
 export PATH="$HOME/.local/bin:$PATH"
 export XDG_CONFIG_HOME=$HOME/.config    # https://wiki.archlinux.org/index.php/XDG_Base_Directory_support
@@ -31,7 +16,7 @@ export PERSONAL=$HOME/code/personal
 export DOTFILES=$PERSONAL/dotfiles
 export WORKSPACE=$PERSONAL/workspace
 
-# -------------------------------- env config --------------------------------
+# -------------------------------- env --------------------------------
 # source os-specific-env
 source $HOME/.env-system.sh
 
@@ -40,22 +25,22 @@ typeset config_files
 config_files=($DOTFILES/apps/**/env.sh)
 for file in "${config_files[@]}"
 do
+  # echo "sourcing" $file
   source $file
 done
 unset config_files
 
-# -------------------------------- Completions config --------------------------------
+# -------------------------------- Completions --------------------------------
 skip_global_compinit=1
 autoload -Uz compinit bashcompinit
 compinit
 bashcompinit
 setopt correct
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=248" # fish like autosuggestions
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
-# -------------------------------- History config --------------------------------
+# -------------------------------- History --------------------------------
 [ -z "$HISTFILE" ] && HISTFILE="$WORKSPACE/zsh_history"
-HISTSIZE=10000
+HISTSIZE=1000000
 SAVEHIST=$HISTSIZE
 HISTDUP=erase
 setopt extended_history       # record timestamp of command in HISTFILE
@@ -67,31 +52,14 @@ setopt hist_verify            # show command with history expansion to user befo
 setopt inc_append_history     # add commands to HISTFILE incrementally instead of waiting till shell exits
 setopt share_history          # share command history data
 
-# -------------------------------- misc config --------------------------------
+# -------------------------------- misc --------------------------------
 unsetopt BEEP # turn off terminal beep
-
-# -------------------------------- completion styling --------------------------------
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}' # case insensitive completions
-zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}" # colored completions
-zstyle ':completion:*' menu no
-zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
-zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
-
-# -------------------------------- keybindings --------------------------------
-bindkey '^p' history-search-backward
-bindkey '^n' history-search-forward
 
 # -------------------------------- shell integrations --------------------------------
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
+eval "$(starship init zsh)" # starship prompt
+
 
 # uncomment this for profiling zshrc
 # zprof
-
-# pnpm
-export PNPM_HOME="/Users/abhishek/Library/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
