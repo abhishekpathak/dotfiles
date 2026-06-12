@@ -4,3 +4,4 @@
 # editor-created
 *~
 *.swp
+**/.claude/settings.local.json

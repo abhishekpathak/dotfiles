@@ -1,0 +1,1 @@
+alias pm="uv run python manage.py"

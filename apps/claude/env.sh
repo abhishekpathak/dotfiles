@@ -1,0 +1,1 @@
+ANTHROPIC_MODEL=sonnet[1m]

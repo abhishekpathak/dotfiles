@@ -2,6 +2,7 @@
 set -e
 
 export WORKSPACE=$HOME/workspace
+export XDG_CONFIG_HOME=$HOME/.config
 export STORE=$WORKSPACE/store
 export PERSONAL=$WORKSPACE/personal
 export DOTFILES=$PERSONAL/dotfiles

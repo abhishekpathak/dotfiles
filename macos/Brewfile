@@ -31,14 +31,16 @@ brew 'ripgrep'
 brew 'fd'
 brew 'direnv'
 brew 'fzf'
+brew 'eza'
 brew 'zoxide'
+brew 'nvm'
 brew 'shellcheck'
 brew 'starship'
 
 # Applications
 cask 'todoist'
 cask 'vlc'
-# cask 'dropbox'
+cask 'dropbox'
 cask 'google-drive'
 cask 'bitwarden'
 cask 'appcleaner'
@@ -52,6 +54,10 @@ cask 'visual-studio-code'
 cask 'firefox'
 cask 'firefox@developer-edition'
 cask 'iterm2'
+cask 'font-hack-nerd-font'
+cask 'obsidian'
+cask 'logseq'
+cask 'raycast'
 
 
 
