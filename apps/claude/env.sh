@@ -1,1 +1,1 @@
-ANTHROPIC_MODEL=sonnet[1m]
+ANTHROPIC_MODEL=sonnet
