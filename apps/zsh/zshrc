@@ -10,10 +10,10 @@ export LANG=en_US.UTF-8
 # -------------------------------- Path --------------------------------
 export PATH="$HOME/.local/bin:$PATH"
 export XDG_CONFIG_HOME=$HOME/.config    # https://wiki.archlinux.org/index.php/XDG_Base_Directory_support
-export WORKSPACE=$HOME/workspace
+export WORKSPACE=$HOME/Documents/Workspace
 export STORE=$WORKSPACE/store
-export PERSONAL=$WORKSPACE/personal
-export DOTFILES=$PERSONAL/dotfiles
+export PERSONALPROJECTS=$WORKSPACE/personal-projects
+export DOTFILES=$PERSONALPROJECTS/dotfiles
 
 # -------------------------------- env --------------------------------
 # source os-specific-env

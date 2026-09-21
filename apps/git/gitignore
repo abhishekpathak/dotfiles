@@ -5,3 +5,4 @@
 *~
 *.swp
 **/.claude/settings.local.json
+.vscode/

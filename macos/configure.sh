@@ -40,9 +40,6 @@ defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 echo "Expand save panel by default."
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
-echo "default new windows to home folder instead of Recents."
-defaults write com.apple.finder NewWindowTarget -string "PfHm"
-defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
 
 echo "Set up keyboard preferences..."
 echo "Disable press-and-hold for keys in favor of key repeat."

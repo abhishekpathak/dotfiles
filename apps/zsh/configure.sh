@@ -13,6 +13,3 @@ if [ -f "$HOME/.zsh_history" ]; then
     mv "$HOME/.zsh_history" "$HOME/.zsh_history.bak"
 fi
 rm -f $HOME/.zsh_history && ln -sf "$STORE/zsh_history" "$HOME/.zsh_history"
-
-echo "execute this manually: chsh -s $(which zsh) "
-echo "and then logout and log back in to set zsh as the default shell."

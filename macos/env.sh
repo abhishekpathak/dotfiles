@@ -1,8 +1,17 @@
-# brew
-# Ensure coreutils and brew-installed binaries take precedence. Also ensure user-level binaries are present in the path.
-if command -v brew >/dev/null 2>&1; then
-    eval "$(brew shellenv)"
+# Homebrew (Apple Silicon only)
+if [ -x /opt/homebrew/bin/brew ]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
-export PATH="$HOME/.local/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/opt/binutils/libexec/gnubin:/usr/local/opt/diffutils/libexec/gnubin:/usr/local/opt/findutils/libexec/gnubin:/opt/homebrew/opt/coreutils/libexec/gnubin:/opt/homebrew/opt/binutils/libexec/gnubin:/opt/homebrew/opt/diffutils/libexec/gnubin:/opt/homebrew/opt/findutils/libexec/gnubin:$PATH"
-export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
+# GNU coreutils and brew-installed binaries take precedence over Apple's BSD binaries.
+if [ -n "$HOMEBREW_PREFIX" ]; then
+    for d in "$HOMEBREW_PREFIX"/opt/*/libexec/gnubin; do
+        [ -d "$d" ] && export PATH="$d:$PATH"
+    done
+    for d in "$HOMEBREW_PREFIX"/opt/*/libexec/gnuman; do
+        [ -d "$d" ] && export MANPATH="$d:$MANPATH"
+    done
+fi
+
+# ensure user-level binaries are present in the path and take precendence over everything else.
+export PATH="$HOME/.local/bin:$PATH"

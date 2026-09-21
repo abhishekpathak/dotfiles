@@ -1,0 +1,6 @@
+{
+    "editor.fontSize": 18,
+    "files.autoSave": "onFocusChange",
+    "editor.wordWrap": "on",
+    "workbench.colorTheme": "Light 2026"
+}
