@@ -4,3 +4,5 @@ To start:
 1. clone/download the repository to `$HOME/Workspace/code/dotfiles`
 2. sync the folder `$HOME/Workspace/store`.
 3. run the bootstrap script: `/bin/bash $HOME/Workspace/code/dotfiles/configure.sh`
+
+Commits in this repository are AI-assisted.
