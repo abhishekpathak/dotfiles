@@ -61,8 +61,8 @@ defaults write com.apple.screencapture type -string png
 echo "Remove shadow from window screenshots."
 defaults write com.apple.screencapture disable-shadow -bool true
 echo "Save screenshots to user screenshots directory instead of desktop."
-mkdir -p $WORKSPACE/screenshots
-defaults write com.apple.screencapture location -string $WORKSPACE/screenshots
+mkdir -p $SCREENSHOTS
+defaults write com.apple.screencapture location -string $SCREENSHOTS
 
 echo "Reload Finder and UI server to apply preferences."
 killall Finder

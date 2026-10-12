@@ -1,11 +1,13 @@
 #!/bin/bash
 set -e
 
-export WORKSPACE=$HOME/Documents/Workspace
+export WORKSPACE=$HOME/Workspace
 export XDG_CONFIG_HOME=$HOME/.config
 export STORE=$WORKSPACE/store
-export PERSONALPROJECTS=$WORKSPACE/personal-projects
-export DOTFILES=$PERSONALPROJECTS/dotfiles
+export CODE=$WORKSPACE/code
+export DOTFILES=$CODE/dotfiles
+export SCREENSHOTS=$WORKSPACE/screenshots
+export NOTES=$WORKSPACE/notes
 
 # echo "Which is the present OS (macos/ubuntu)?"
 # read -e system
