@@ -24,8 +24,8 @@ echo "Show full file path in finder status bar."
 defaults write com.apple.finder ShowPathbar -bool true
 echo "Show file extensions by default."
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
-echo "Show hidden files by default."
-defaults write com.apple.finder AppleShowAllFiles -bool true
+# echo "Show hidden files by default."
+# defaults write com.apple.finder AppleShowAllFiles -bool true
 echo "Don't put folders above files when sorting by name."
 defaults write com.apple.finder _FXSortFoldersFirst -bool true
 echo "Show Library Folder by default."
