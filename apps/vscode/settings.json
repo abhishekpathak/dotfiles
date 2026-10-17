@@ -2,5 +2,11 @@
     "editor.fontSize": 18,
     "files.autoSave": "onFocusChange",
     "editor.wordWrap": "on",
-    "workbench.colorTheme": "Light 2026"
+    "workbench.colorTheme": "Light 2026",
+    "files.associations": {
+        "*.py": "python"
+    },
+    "workbench.editor.empty.hint": "hidden",
+    "python.analysis.typeCheckingMode": "basic",
+    "update.showReleaseNotes": false
 }
